@@ -1,0 +1,12 @@
+created: 20230323071626642
+creator: 马不前
+modified: 20230323071641004
+modifier: 马不前
+tags: $:/tags/FishingFilter/caption
+title: $:/config/FishingFilter/Caption/catchfish
+type: text/vnd.tiddlywiki
+
+[<currentTiddler>tag[?]!tag[.]]
+[list[$:/temp/fishing]!tag[.]match<currentTiddler>]
+[<currentTiddler>!tag[.]has[annotate-text]]
+[<currentTiddler>!tag[.]has[word]]

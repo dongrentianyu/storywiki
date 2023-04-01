@@ -1,0 +1,23 @@
+created: 20230319140642848
+creator: 马不前
+modified: 20230319142513443
+modifier: 马不前
+tags: $:/tags/Stylesheet 自定义修改样式
+title: 悬浮编辑器工具栏
+tmap.id: 816faec9-d146-4276-b3a1-e1d542e542b8
+type: text/vnd.tiddlywiki
+
+.tc-editor-toolbar {
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -o-sticky;
+    position: -ms-sticky;
+    position: sticky;
+    top: 50px;
+    background: fafaf1;
+    z-index: 500;
+}
+
+.tc-tiddler-preview {
+    overflow: unset;
+}

@@ -1,0 +1,18 @@
+created: 20230319023228237
+creator: 马不前
+modified: 20230322052154954
+modifier: 马不前
+tags: $:/tags/Stylesheet
+title: 自定义修改notebook主题样式
+tmap.id: e264fc61-f755-497a-8a45-376c8c6caff8
+type: text/vnd.tiddlywiki
+
+@media only screen and (min-width: 767px){
+.tc-story-river {
+    padding: 6px 0 !important;
+    width: 100% !important;
+    max-width: 950px !important;
+    margin: 0 auto !important;
+    margin-top: 34px !important;
+}
+}

@@ -1,0 +1,10 @@
+created: 20230323071555531
+creator: 马不前
+modified: 20230323071557281
+modifier: 马不前
+tags: $:/tags/FishingFilter/caption
+title: $:/config/FishingFilter/caption
+type: text/vnd.tiddlywiki
+
+[list[$:/temp/fishing]!tag[.]match<currentTiddler>]
+[subfilter{$:/config/fishingpond/rod}!tag[.]match<currentTiddler>]
