@@ -1,6 +1,6 @@
 created: 20200429191943257
 creator: 马不前
-modified: 20230320034244883
+modified: 20230401130111999
 modifier: 马不前
 title: $:/themes/nico/notebook/ui/Search
 type: text/vnd.tiddlywiki
@@ -44,14 +44,14 @@ type: text/vnd.tiddlywiki
 	      cancelPopups="yes"
 	      configTiddlerFilter="[[$:/state/search/currentTab]!is[missing]get[text]] ~[{$:/config/SearchResults/Default}]"
 	      />
-  <$button
+<!---<$button
     tooltip={{$:/language/Buttons/AdvancedSearch/Hint}}
     aria-label={{$:/language/Buttons/AdvancedSearch/Caption}}
-    class="tc-btn-invisible"
+    class="tc-btn-invisible tc-page-controls"
     >
     {{$:/core/images/advanced-search-button}}
     <<advanced-search-actions>>
-  </$button>
+  </$button>--->
   <$reveal tag="div" class="tc-block-dropdown-wrapper" state="$:/state/popup/notebook-search" type="nomatch" text="" default="">
     <$list filter="[<searchTiddler>get[text]minlength{$:/config/Search/MinLength}limit[1]]" emptyMessage="" variable="listItem">
       <div class="tc-block-dropdown tc-search-drop-down">
