@@ -1,0 +1,26 @@
+created: 20230402081157951
+creator: 马不前
+modified: 20230402081852043
+modifier: 马不前
+tags: asd 本站建设
+title: 通过名称并嵌入网页
+tmap.id: 19614e72-c3a4-4e2b-84c2-19f5b8b0f530
+type: text/vnd.tiddlywiki
+
+\define WENAI(word)
+\rules except wikilink
+<$wikify name="input" text="https://dongrentianyu.github.io/WENAI/#$word$">
+<$list filter="[<__word__>trim[]!is[blank]]" variable=null>
+<a href=<<input>> target="_blank">$word$</a>
+<br>
+<iframe src=<<input>> width="750px" height="500px"></iframe>
+</$list>
+</$wikify>
+
+\end
+
+Search in [[WENAI|https://dongrentianyu.github.io/WENAI/]]: 
+<$edit-text  tiddler="$:/temp/search-WENAI" field="keywords" placeholder="search WENAI"/>
+
+<$macrocall $name="WENAI" word={{$:/temp/search-WENAI!!keywords}} />
+
