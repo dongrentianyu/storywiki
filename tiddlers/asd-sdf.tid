@@ -1,0 +1,61 @@
+created: 20230421130619861
+creator: 马不前
+modified: 20230421130948408
+modifier: 马不前
+tags: $:/tags/ViewToolbar
+title: asd-sdf
+tmap.id: 68425eb4-f033-4281-9dda-1b39b9248dcf
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+<$list filter="[<currentTiddler>!tag[asd]!tag[sdf]]" variable="ignore">
+  <$button 
+	tooltip="只展示正文" 
+	aria-label="只展示正文" 
+	class=<<tv-config-toolbar-class>> >
+    <$action-listops $tags="asd" />
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/images/svg-icon/file-text-o}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text="只展示正文"/>
+      </span>
+    </$list>
+  </$button>
+</$list>
+
+<$list filter="[<currentTiddler>tag[sdf]!tag[asd]]" variable="ignore">
+  <$button 
+	tooltip="自设模板" 
+	aria-label="自设模板" 
+	class=<<tv-config-toolbar-class>> >
+    <$action-listops $tags="+[!match[sdf]]" />
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/images/bootstrap/layout-text-window-reverse}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text="自设模板"/>
+      </span>
+    </$list>
+  </$button>
+</$list>
+
+<$list filter="[<currentTiddler>tag[asd]!tag[sdf]]" variable="ignore">
+  <$button 
+	tooltip="切换到链接图谱" 
+	aria-label="切换到链接图谱" 
+	class=<<tv-config-toolbar-class>> >
+    <$action-listops $tags="+[!match[asd]] sdf" />
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/images/bootstrap/columns-gap}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text="切换到链接图谱"/>
+      </span>
+    </$list>
+  </$button>
+</$list>

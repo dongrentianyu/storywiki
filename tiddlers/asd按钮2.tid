@@ -1,0 +1,44 @@
+created: 20230416150056120
+creator: 马不前
+description: 转换两种呈现状态
+modified: 20230421130816397
+modifier: 马不前
+tags: 
+title: asd按钮2
+tmap.id: a58f34e2-9d8b-47e4-8774-c5f0ed619229
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+<$list filter="[<currentTiddler>!tag[asd]]" variable="ignore">
+  <$button 
+	tooltip="只展示正文" 
+	aria-label="只展示正文" 
+	class=<<tv-config-toolbar-class>> >
+    <$action-listops $tags="asd" />
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/images/svg-icon/file-text-o}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text="只展示正文"/>
+      </span>
+    </$list>
+  </$button>
+</$list>
+<$list filter="[<currentTiddler>tag[asd]]" variable="ignore">
+  <$button 
+	tooltip="自设模板" 
+	aria-label="自设模板" 
+	class=<<tv-config-toolbar-class>> >
+    <$action-listops $tags="+[!match[asd]]" />
+    <$list filter="[<tv-config-toolbar-icons>match[yes]]">
+      {{$:/images/bootstrap/layout-text-window-reverse}}
+    </$list>
+    <$list filter="[<tv-config-toolbar-text>match[yes]]">
+      <span class="tc-btn-text">
+        <$text text="自设模板"/>
+      </span>
+    </$list>
+  </$button>
+</$list>

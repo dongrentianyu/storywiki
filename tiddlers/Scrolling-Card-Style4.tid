@@ -1,0 +1,47 @@
+created: 20230421130518957
+creator: 马不前
+modified: 20230421132546068
+modifier: 马不前
+tags: 
+title: Scrolling-Card-Style4
+tmap.id: ab7f03cf-143d-4fa2-aa4f-4d364be644ef
+type: text/vnd.tiddlywiki
+
+<style>
+.parent {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 5px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { grid-area: 1 / 2 / 2 / 3; }
+.div3 { grid-area: 1 / 3 / 2 / 4; }
+.div4 { grid-area: 1 / 4 / 2 / 5; }
+
+background-color: #f3f3ec;
+</style>
+<div class="parent">
+<div class="div2">
+节点丸
+<br/>
+<$transclude tiddler={{node-explorer-colorful}} field=title mode=block/>
+</div>
+<div class="div1">
+最近打开的条目
+<br/>
+<$transclude tiddler={{$:/core/ui/SideBar/Open}} field=title mode=block/>
+</div>
+<div class="div3">
+最近创建的条目
+<br/>
+<$transclude tiddler={{最近创建的条目}} field=title mode=block/>
+</div>
+<div class="div4">
+最近修改的条目
+<br/>
+<$transclude tiddler={{最近修改的条目}} field=title mode=block/>
+</div>
+</div>
