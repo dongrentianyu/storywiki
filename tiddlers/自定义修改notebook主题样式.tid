@@ -1,17 +1,20 @@
 created: 20230319023228237
 creator: 马不前
-modified: 20230401104512192
+modified: 20230430124747173
 modifier: 马不前
-tags: $:/tags/Stylesheet sdf
+tags: 自定义修改样式 $:/tags/Stylesheet
 title: 自定义修改notebook主题样式
 tmap.id: e264fc61-f755-497a-8a45-376c8c6caff8
 type: text/vnd.tiddlywiki
+
+<!--加宽故事河，但在移动端设备不会生效--->
+<!--notebook主题自带了一个移动端配套插件，但会与jd的移动插件冲突，所以我只保留了notebook移动配套插件，如果换了其他主题需要加回来-->
 
 @media only screen and (min-width: 767px){
 .tc-story-river {
     padding: 6px 0 !important;
     width: 100% !important;
-    max-width: 950px !important;
+    max-width: 1200px !important;
     margin: 0 auto !important;
     margin-top: 34px !important;
 }
