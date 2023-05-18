@@ -1,11 +1,16 @@
-created: 20230323071300350
+created: 20230318144723997
 creator: 马不前
-modified: 20230401104512193
+modified: 20230507140205369
 modifier: 马不前
-tags: sdf
+tags: 
 title: 最近修改与最近创建条目
-tmap.id: 390a98a4-7ac7-4c88-bec5-f4e62086a0e9
+tmap.id: bfda6ebe-79a5-46d4-97b3-38fe24107292
 type: text/vnd.tiddlywiki
 
-<<list-links "[!is[system]!sort[created]limit[5]]">>
-<<list-links "[!is[system]!sort[modified]limit[10]]">>
+<$list filter="[!is[system]!sort[created]limit[20]] +[!is[system]!sort[modified]limit[20]] +[get[title]unique[]]">
+
+!!!!<$link><<currentTiddler>></$link>
+
+</$list>
+
+<!---<<list-links "[!is[system]!sort[created]limit[20]] +[!is[system]!sort[modified]limit[20]] +[get[title]unique[]]">>-->

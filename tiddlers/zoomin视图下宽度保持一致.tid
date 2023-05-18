@@ -1,0 +1,12 @@
+created: 20230516104215127
+creator: 马不前
+modified: 20230516131105802
+modifier: 马不前
+tags: $:/tags/Stylesheet 自定义修改样式
+title: zoomin视图下宽度保持一致
+tmap.id: 77df07e8-00c3-4363-8fe8-2ee995558aba
+type: text/vnd.tiddlywiki
+
+body.tc-body .tc-storyview-zoomin-tiddler {
+        width: calc(100% - 0px);
+}

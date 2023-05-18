@@ -1,10 +1,10 @@
-created: 20230322050408976
+created: 20230321144836969
 creator: 马不前
-modified: 20230401104512201
+modified: 20230507140514707
 modifier: 马不前
-tags: self-template sdf
+tags: self-template
 title: Scrolling-Card-Style3
-tmap.id: 711714a3-eb01-4fa2-b2da-c367a92becd9
+tmap.id: 84e248e1-acfd-4cef-950f-e3f040f74509
 type: text/vnd.tiddlywiki
 
 <!--使用这个模板需要添加`最近修改选项`、`node-explorer-colorful`、`$:/core/ui/SideBar/Open`条目-->
@@ -29,10 +29,11 @@ type: text/vnd.tiddlywiki
 		flex-direction: column;
 		margin: 0;
 		padding: 0;
+		max-height: 800px;
 	}
 
 	.top-section {
-		background-color: #F0EAE7;
+		background-color: #f5f5ee;
 		flex: 1;
 		display: flex;
 		justify-content: center;
@@ -54,28 +55,28 @@ type: text/vnd.tiddlywiki
 	}
 
 	.left-section {
-		background-color: #ECEFF1;
-		flex: 2;
+		background-color: #f5f5ee;
+		flex: 1;
 		display: flex;
 		flex-direction: column;
 		margin: 0px;
-		padding: 0px;
+		padding: 5px;
 		overflow: scroll;
-		max-height: 400px;
+		max-height: 600px;
 	}
 .left-section::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
 	.right-section {
-		background-color: #f5f2e4;
-    padding: 10px;
-		flex: 4;
+		background-color: #f5f5ee;
+    padding: 20px;
+		flex: 5;
 		display: flex;
 		margin: 0;
 		position: relative;
 		min-height: 220px;
-		max-height: 400px;
+		max-height: 600px;
     overflow-y: auto;
     overflow-x: hidden;
 	}
