@@ -4,7 +4,6 @@ modified: 20230401104512188
 modifier: 马不前
 tags: sdf
 title: 节点丸的构思及与其他插件相比
-tmap.id: 2896e7b2-065f-48f0-a58a-817b4dd89834
 type: text/vnd.tiddlywiki
 
 理论上也可以做到计数器。有多少个标签，有多少个反向标签，理论上都可以计算出来。不过感觉没什么用，就没接着搞。

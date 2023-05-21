@@ -4,7 +4,6 @@ modified: 20230401104512197
 modifier: 马不前
 tags: sdf
 title: mynewtemplate
-tmap.id: 47fa14b9-5b90-46ec-901b-2cbadede15f0
 type: text/vnd.tiddlywiki
 
 \import [all[shadows+tiddlers]tag[$:/tags/Macro/View/Body]!has[draft.of]]

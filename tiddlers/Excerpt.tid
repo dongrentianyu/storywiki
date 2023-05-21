@@ -3,7 +3,6 @@ modified: 20230401104512195
 modifier: 马不前
 tags: sdf
 title: Excerpt
-tmap.id: 747b5dea-96f2-4711-bf32-3d9f12a6860b
 type: text/vnd.tiddlywiki
 
 {{{ [{!!title}split[/]last[]] }}}

@@ -4,7 +4,6 @@ modified: 20230507140205369
 modifier: 马不前
 tags: 
 title: 最近修改与最近创建条目
-tmap.id: bfda6ebe-79a5-46d4-97b3-38fe24107292
 type: text/vnd.tiddlywiki
 
 <$list filter="[!is[system]!sort[created]limit[20]] +[!is[system]!sort[modified]limit[20]] +[get[title]unique[]]">

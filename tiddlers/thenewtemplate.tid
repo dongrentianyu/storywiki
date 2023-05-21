@@ -5,7 +5,6 @@ modified: 20230401104512205
 modifier: 马不前
 tags: sdf
 title: thenewtemplate
-tmap.id: dccc3cf4-72f3-4ee7-b894-3ef7d9964bf0
 type: text/vnd.tiddlywiki
 
 [all[current]!is[system]!is[shadow]!tag[$:/tags/SideBar]!tag[$:/tags/ViewTemplate]!tag[$:/tags/Stylesheet]!tag[.]then[Scrolling-Card-Style3]]

@@ -9,7 +9,6 @@ modified: 20230401104512196
 modifier: 马不前
 tags: $:/tags/EditorToolbar sdf
 title: format-line-spacing/button
-tmap.id: 141b3cb2-e910-4b0b-a936-354b3afefc36
 type: text/vnd.tiddlywiki
 
 <$action-sendmessage

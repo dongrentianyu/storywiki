@@ -5,7 +5,6 @@ modified: 20230401104512195
 modifier: 马不前
 tags: self-template $:/tags/ViewTemplateBodyFilter sdf
 title: fishing
-tmap.id: 7212ad8b-548a-4fca-89f2-69554a4fe0af
 type: text/vnd.tiddlywiki
 
 [all[current]!is[system]!is[shadow]!tag[$:/tags/SideBar]!tag[$:/tags/ViewTemplate]!tag[$:/tags/Stylesheet]tag[.]then[Scrolling-Card-Style3]]

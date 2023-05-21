@@ -5,7 +5,6 @@ modified: 20230401104512188
 modifier: 马不前
 tags: 自定制的太微 sdf
 title: 节点丸
-tmap.id: da24c999-b142-4141-a87a-441721dff4ae
 type: text/vnd.tiddlywiki
 
 <<details label:"节点丸" src:"node-explorer-colorful" status:open labelClass:"bg-dark text-white">>

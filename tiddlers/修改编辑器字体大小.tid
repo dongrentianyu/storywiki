@@ -4,7 +4,6 @@ modified: 20230515161231640
 modifier: 马不前
 tags: $:/tags/Stylesheet 自定义修改样式 notebook主题插件
 title: 修改编辑器字体大小
-tmap.id: 271c4cb7-3e76-4f9b-a569-1488fc5753cf
 type: text/vnd.tiddlywiki
 
 .CodeMirror-lines {

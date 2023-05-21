@@ -4,7 +4,6 @@ modified: 20230401104512200
 modifier: 马不前
 tags: self-template sdf
 title: Scrolling-Card-Style2
-tmap.id: 4ea96707-96be-46fd-b28e-c62b6e29b7c4
 type: text/vnd.tiddlywiki
 
 <!--使用这个模板需要添加`7个最近修改选项`、`node-explorer-colorful`、`$:/core/ui/SideBar/Open`、`Lower Right`条目-->

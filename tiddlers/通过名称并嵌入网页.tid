@@ -4,7 +4,6 @@ modified: 20230402081852043
 modifier: 马不前
 tags: asd 本站建设
 title: 通过名称并嵌入网页
-tmap.id: 19614e72-c3a4-4e2b-84c2-19f5b8b0f530
 type: text/vnd.tiddlywiki
 
 \define WENAI(word)

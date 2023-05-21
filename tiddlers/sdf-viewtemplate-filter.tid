@@ -5,7 +5,6 @@ modified: 20230421130505023
 modifier: 马不前
 tags: $:/tags/ViewTemplateBodyFilter
 title: sdf-viewtemplate-filter
-tmap.id: b3289223-53ea-4b2c-a645-77c521165d9e
 type: text/vnd.tiddlywiki
 
 [all[current]!is[system]!is[shadow]!tag[$:/tags/SideBar]!tag[$:/tags/ViewTemplate]!tag[$:/tags/Stylesheet]!tag[?]tag[sdf]then[Scrolling-Card-Style4]]

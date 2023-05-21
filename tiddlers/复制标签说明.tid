@@ -4,7 +4,6 @@ modified: 20230401104512187
 modifier: 马不前
 tags: sdf
 title: 复制标签说明
-tmap.id: 86bdb44a-cd23-4b95-b9c7-b4fb63bc820a
 type: text/vnd.tiddlywiki
 
 有时编辑会遇到需要复制某个条目标签的情况。这样就不需要自己手动编辑了。但手动复制又太麻烦。于是就做了这个按钮。

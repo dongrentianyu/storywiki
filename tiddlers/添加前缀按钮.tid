@@ -6,7 +6,6 @@ modified: 20230401104512191
 modifier: 马不前
 tags: $:/tags/ViewToolbar 自定制的太微 sdf
 title: 添加前缀按钮
-tmap.id: 61b1f52d-3e47-4771-a8aa-0496ac2f5726
 type: text/vnd.tiddlywiki
 
 \define testCreate()
