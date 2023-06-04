@@ -1,0 +1,68 @@
+created: 20230604131422108
+creator: 马不前
+modified: 20230604132201690
+modifier: 马不前
+tags: $:/tags/Stylesheet
+title: Scrolling-Card-Style6-css
+type: text/vnd.tiddlywiki
+
+<!--使用这个模板需要添加`最近修改选项`、`node-explorer-colorful`、`$:/core/ui/SideBar/Open`条目-->
+<!--这个版本是从第三版的基础上修改而来的，主要是把节点丸的内容移除成用鼠标显示。因为平时可能也用不到，这样显得更简洁。-->
+<!--有些样式我也说不上来为什么要这样设置，有没有更好的设置我也不清楚，我只是仅我所能设计得更好，但不一定让所有人都满意。-->
+<!--同样是在3的基础上改版的，主要是现在把节点丸的内容放在标题下面，同时控制字体，这样也就不用其他的了。--->
+<style>
+@media only screen and (max-width: 767px) {
+  .card-top-section, .card-left-section, .card-right-section, .card-container, .card-bottom-section {
+    display:none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+}
+.card-container {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		max-height: 800px;
+	}
+	.card-bottom-section {
+		background-color: #FFF;
+		flex: 6;
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		overflow: scroll;
+	}
+.card-left-section {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		padding: 5px;
+		overflow: scroll;
+		max-height: 800px;
+	}
+.card-left-section::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+	.card-right-section {
+    padding: 10px;
+		flex: 5;
+		display: flex;
+		margin: 0;
+		position: relative;
+		min-height: 220px;
+		max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+	}
+.card-right-section::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+</style>

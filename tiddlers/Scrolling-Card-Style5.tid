@@ -1,0 +1,123 @@
+code-body: yes
+created: 20230321144836969
+creator: 马不前
+modified: 20230526032926150
+modifier: 马不前
+tags: self-template
+title: Scrolling-Card-Style5
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+<!--使用这个模板需要添加`最近修改选项`、`node-explorer-colorful`、`$:/core/ui/SideBar/Open`条目-->
+<!--这个版本是从第三版的基础上修改而来的，主要是把节点丸的内容移除成用鼠标显示。因为平时可能也用不到，这样显得更简洁。-->
+<!--有些样式我也说不上来为什么要这样设置，有没有更好的设置我也不清楚，我只是仅我所能设计得更好，但不一定让所有人都满意。-->
+<!--这个模板最大的更新就是可以在移动直接显示正文，方便截屏分享，也不用滚动条，省得边框不好调整。--->
+<style>
+@media only screen and (max-width: 767px) {
+  .card-top-section, .card-left-section, .card-right-section, .card-container, .card-bottom-section {
+    display:none !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+}
+.card-container {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+		max-height: 800px;
+	}
+	.card-top-section {
+		background-color: #f5f5ee;
+		flex: 2;
+		display: flex;
+		overflow: scroll;
+		height:auto;
+		max-height: 200px;
+		text-align: center;
+		justify-content: right;
+		align-items: center;
+	}
+	.card-bottom-section {
+		background-color: #FFF;
+		flex: 6;
+		display: flex;
+		flex-direction: row;
+		margin: 0;
+		padding: 0;
+		overflow: scroll;
+	}
+	.card-left-section {
+		background-color: #f5f5ee;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		margin: 0px;
+		padding: 5px;
+		overflow: scroll;
+		max-height: 600px;
+	}
+   .card-left-section::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+	.card-right-section {
+		background-color: #f5f5ee;
+        padding: 20px;
+		flex: 5;
+		display: flex;
+		margin: 0;
+		position: relative;
+		min-height: 220px;
+		max-height: 600px;
+    overflow-y: auto;
+    overflow-x: hidden;
+	}
+.card-right-section::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+</style>
+
+<div class="card-container">
+	<div class="card-bottom-section">
+		<div class="card-left-section">
+			<div style="flex: 1;">
+				<$transclude tiddler={{$:/core/ui/SideBar/Open}} field=title mode=block/>
+			</div>
+			<div style="flex: 1;">
+				<$transclude tiddler={{最近修改与最近创建条目}} field=title mode=block/>
+			</div>
+		</div>
+		<div class="card-right-section">
+		
+<$macrocall $name="reuse-pane" content="""<$transclude tiddler={{node-explorer-colorful}} field=title mode=block/>""" />
+
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+	<$transclude tiddler=<<currentTiddler>> />
+					
+<$button popup=<<qualify "$:/state/popup/fishingdeck">> tooltip="回到顶端" aria-label="回到顶端" class=<<tv-config-toolbar-class>> selectedClass="tc-selected" style="display: block;width: 100%;margin: 1em auto;">
+<$action-navigate $to=<<currentTiddler>>/>
+{{$:/core/images/up-arrow}}
+</$button>
+</$reveal>
+</div>
+</div>
+</div>
+
+
+<div class="mobile-only">
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+		
+					<$transclude tiddler=<<currentTiddler>> />
+					
+<$button popup=<<qualify "$:/state/popup/fishingdeck">> tooltip="回到顶端" aria-label="回到顶端" class=<<tv-config-toolbar-class>> selectedClass="tc-selected" style="display: block;width: 100%;margin: 1em auto;">
+<$action-navigate $to=<<currentTiddler>>/>
+{{$:/core/images/up-arrow}}
+</$button>
+</$reveal>
+</div>

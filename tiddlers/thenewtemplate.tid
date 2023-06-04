@@ -1,10 +1,10 @@
 code-body: yes
 created: 20230225153453759
 creator: 马不前
-modified: 20230401104512205
+modified: 20230604130447462
 modifier: 马不前
-tags: sdf
+tags: self-template $:/tags/ViewTemplateBodyFilter
 title: thenewtemplate
 type: text/vnd.tiddlywiki
 
-[all[current]!is[system]!is[shadow]!tag[$:/tags/SideBar]!tag[$:/tags/ViewTemplate]!tag[$:/tags/Stylesheet]!tag[.]then[Scrolling-Card-Style3]]
+[all[current]!is[system]!is[shadow]!tag[$:/tags/SideBar]!tag[$:/tags/ViewTemplate]!tag[$:/tags/Stylesheet]!tag[?]!tag[asd]then[Scrolling-Card-Style6]]

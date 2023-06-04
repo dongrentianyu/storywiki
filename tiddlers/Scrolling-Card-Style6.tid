@@ -1,0 +1,48 @@
+code-body: yes
+created: 20230604130251172
+creator: 马不前
+modified: 20230604131432359
+modifier: 马不前
+tags: self-template
+title: Scrolling-Card-Style6
+type: text/vnd.tiddlywiki
+
+\whitespace trim
+
+<div class="card-container">
+	<div class="card-bottom-section">
+		<div class="card-left-section">
+			<div style="flex: 1;">
+				<$transclude tiddler={{$:/core/ui/SideBar/Open}} field=title mode=block/>
+			</div>
+			<div style="flex: 1;">
+				<$transclude tiddler={{最近修改与最近创建条目}} field=title mode=block/>
+			</div>
+		</div>
+		<div class="card-right-section">
+
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+
+	<$transclude tiddler=<<currentTiddler>> />
+					
+<$button popup=<<qualify "$:/state/popup/fishingdeck">> tooltip="回到顶端" aria-label="回到顶端" class=<<tv-config-toolbar-class>> selectedClass="tc-selected" style="display: block;width: 100%;margin: 1em auto;">
+<$action-navigate $to=<<currentTiddler>>/>
+{{$:/core/images/up-arrow}}
+</$button>
+</$reveal>
+</div>
+</div>
+</div>
+
+
+<div class="mobile-only">
+<$reveal tag="div" class="tc-tiddler-body" type="nomatch" stateTitle=<<folded-state>> text="hide" retain="yes" animate="yes">
+		
+					<$transclude tiddler=<<currentTiddler>> />
+					
+<$button popup=<<qualify "$:/state/popup/fishingdeck">> tooltip="回到顶端" aria-label="回到顶端" class=<<tv-config-toolbar-class>> selectedClass="tc-selected" style="display: block;width: 100%;margin: 1em auto;">
+<$action-navigate $to=<<currentTiddler>>/>
+{{$:/core/images/up-arrow}}
+</$button>
+</$reveal>
+</div>
