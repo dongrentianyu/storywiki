@@ -1,6 +1,6 @@
 created: 20230515153517532
 creator: 马不前
-modified: 20230515161231640
+modified: 20230611111718994
 modifier: 马不前
 tags: $:/tags/Stylesheet 自定义修改样式 notebook主题插件
 title: 修改编辑器字体大小
@@ -8,7 +8,7 @@ type: text/vnd.tiddlywiki
 
 .CodeMirror-lines {
     cursor: text;
-    min-height: 1px;
-		font-size: 34px;
-	line-height: 30px;
+    min-height: 5em;
+    font-size: 34px;
+    line-height: 40px;
 }
