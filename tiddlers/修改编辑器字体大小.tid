@@ -1,6 +1,7 @@
 created: 20230515153517532
 creator: 马不前
-modified: 20230611111718994
+list-after: $:/plugins/kookma/shiraz/styles/highlight
+modified: 20230704042814721
 modifier: 马不前
 tags: $:/tags/Stylesheet 自定义修改样式 notebook主题插件
 title: 修改编辑器字体大小
